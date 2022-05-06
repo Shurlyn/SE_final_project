@@ -6,8 +6,39 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <nav class="navigate">
+      <ul>
+        <li><a href="calendar.html">Calendar</a></li>
+      </ul>
+    </nav>
+
+    <style>
+
+      body {
+        max-height: 100vh;
+        background-color: black;
+
+      }
+
+
+      #app {
+        margin: 0;
+        margin-top: 0;
+        background-color: yellow;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
+
   </head>
   <body>
+ 
+
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>

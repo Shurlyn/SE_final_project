@@ -1,5 +1,11 @@
 <template>
+<div class="tasks">
+  <!-- <p>{{ $store.state.firstName }} {{ $store.state.lastName }}</p> -->
 <TaskDisplay />
+<!-- <MainTaskInput :tasklist="tasklist" /> -->
+</div>
+
+<!-- <div background-color="black"> </div> -->
 </template>
 
 <script>
@@ -21,5 +27,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  height: 100vh;
+  width: 100vw;
+}
+.tasks {
+  background-color: rgb(158, 158, 236);
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  margin: 0;
 }
 </style>
