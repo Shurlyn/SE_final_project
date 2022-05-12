@@ -1,40 +1,35 @@
 <template>
-<div class="tasks">
-  <!-- <p>{{ $store.state.firstName }} {{ $store.state.lastName }}</p> -->
-<TaskDisplay />
-<!-- <MainTaskInput :tasklist="tasklist" /> -->
-</div>
+  <nav>
+    <router-link to="/">Task</router-link> 
+    <router-link to="/calendar">Calendar</router-link>
+  </nav>
+  <div id="app">
+    <router-view/>
+  </div>
 
-<!-- <div background-color="black"> </div> -->
 </template>
 
-<script>
-import TaskDisplay from "./components/tasks/TaskDisplay.vue"
-
-export default {
-  name: 'App',
-  components: {
-    TaskDisplay
-  }
-}
-</script>
-
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  height: 100vh;
-  width: 100vw;
+  color: pink;
+  height: 98vh;
+  width: 100wh;
 }
-.tasks {
-  background-color: rgb(158, 158, 236);
-  width: 100vw;
-  height: 100vh;
-  align-content: center;
-  margin: 0;
+
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>

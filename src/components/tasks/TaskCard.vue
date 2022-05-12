@@ -1,7 +1,7 @@
 <template>
 
 <div class="task"> 
-    {{task}}
+   <p> {{task}} </p>
 </div>
 
 
@@ -25,12 +25,17 @@ export default {
     text-align: left;
     background-color: rgb(0, 0, 0, 0.4);    
     width: 80vw;
-    height: 100px;
+    height: fit-content;
     align-self: center;
     padding: 3px;
     margin: 3px;
 
 
+
+}
+
+p {
+    height: fit-content;
 }
 
 </style>

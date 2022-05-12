@@ -1,7 +1,8 @@
 <template>
+<div id="tasks">
+  <TaskCard v-for="(task, i) in taskList" :key="i" :task="task"/>
+</div>
 
-
-<TaskCard v-for="(task, i) in taskList" :key="i" :task="task"/>
 <MainTaskInput />
 
 </template>
