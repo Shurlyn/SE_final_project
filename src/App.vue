@@ -9,6 +9,12 @@
 
 </template>
 
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -16,7 +22,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: pink;
-  height: 98vh;
+  height: 100vh;
   width: 100wh;
 }
 
